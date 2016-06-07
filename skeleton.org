@@ -8,7 +8,7 @@
 - Bindings
 **** Intro [0.5h]
 - lisp philosphy (quotes)
-- clojure philosophy (simlicity, jvm, immutability)
+- clojure philosophy (simplicity, jvm, immutability)
 - contrast with other JVM languages (java, scala, groovy, JRuby)
 - community, libraries, books, where to find help
 **** Break [0.5h]

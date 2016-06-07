@@ -1,0 +1,45 @@
+* Skeleton of the workshop
+** Day 1
+**** Get your hands dirty [1.5h]
+- Emacs, Leiningen, Cider, Paredit
+- Arithmetic
+- Symbols, Keywords, Vars
+- Booleans, Control structures
+- Bindings
+**** Intro [0.5h]
+- lisp philosphy (quotes)
+- clojure philosophy (simlicity, jvm, immutability)
+- contrast with other JVM languages (java, scala, groovy, JRuby)
+- community, libraries, books, where to find help
+**** Break [0.5h]
+**** Clojure's persistent data structures [1h]
+- Sequences (lists and vectors)
+    - Create and manipulate seqs (map, filter, reduce)
+    - Laziness (infinite sequences, utilizing laziness)
+    - Immutability in persistent data structures (trie)
+- Sets and Maps
+    - Create, manipulate
+- Functions
+    - Recursion
+    - High order functions
+**** Some practical examples [1h]
+- working with libraries
+- require/import
+- read/load/compile and how it works
+- read from the filesystem, parse json, etc
+**** Lunch
+** Day 2
+**** Java Interop [1.5h]
+- Use a java lib (like j.u.c/jsoup) in clojure
+- Extending java code in clojure
+**** Break [0.5h]
+**** Concurrency and Parallelism [2h]
+- pmap
+- futures, promises
+- j.u.c
+- primitives (atom, agent, var, ref)
+**** Macros [0.25h]
+- A couple of very simple macros to give a feel for manipulating code as data.
+**** Spec [0.25h]
+- A couple of very simple examples to demonstrate clojure.spec.
+**** Lunch

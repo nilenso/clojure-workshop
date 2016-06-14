@@ -29,6 +29,11 @@
 - read from the filesystem, parse json, etc
 **** Lunch
 ** Day 2
+**** Modeling
+- Create and extend abstractions with Multimethods, Protocols, and Records
+- Proper use of maps, vectors and schema to model the domain
+- Horizontal layering and vertical partitioning of code
+- Connecting code and configs to build up a final app
 **** Java Interop [1.5h]
 - Use a java lib (like j.u.c/jsoup) in clojure
 - Extending java code in clojure

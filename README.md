@@ -6,4 +6,4 @@ This repo contains information about clojure workshops organized by [nilenso](ni
 
 There is a [survey form](https://docs.google.com/a/nilenso.com/forms/d/14MwjQZ9MOvceu5H1NED5Sh_yN2mqxPRSduVlMTj6BJM/viewform) that you can use to give us feedback on the content or other logistics. You can also email us at moshimoshi@nilenso.com.
 
-If you have registered for the workshop then go through [preperation.md](https://github.com/nilenso/clojure-workshop/blob/master/preperation.md), to get everything setup for the workshop.
+If you have registered for the workshop then go through [preperation.md](https://github.com/nilenso/clojure-workshop/blob/master/preparation.md), to get everything setup for the workshop.

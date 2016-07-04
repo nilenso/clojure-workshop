@@ -1,11 +1,11 @@
 Before you come to the workshop, you are required to have clojure installed, and your editor setup to write Clojure comfortably.
-This would take half an hour of your time and would help us move at a smoother pace on the day of the workshop.
+This will take half an hour of your time and would help us move at a smoother pace on the day of the workshop.
 
 ## Download and install Clojure and Leiningen
 1. Ensure you're on Linux or Mac OS.
 2. Make sure you have java version 1.6 or later installed on your laptop, if not then upgrade or install the latest version from here http://www.oracle.com/technetwork/java/javase/downloads/index.html
-3. Install leiningen from http://leiningen.org/, which would also download Clojure for you.
-4. Run `lein repl` to open up the clojure repl, and ensure it is working. Type in "I has Clojure", it should print that string back.
+3. Install leiningen from http://leiningen.org/, which should also download Clojure for you.
+4. Run `lein repl` to open up the clojure repl, and ensure it is working. Type in "I has Clojure" with quotes, it should print that string back.
 
 ## Editor
 The preferred editor for the workshop will be emacs, as it is well suited to edit s-expressions. You are welcome to use an editor that you are comfortable with, but ensure good s-experession editing ability.

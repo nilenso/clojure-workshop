@@ -1,39 +1,43 @@
 * Skeleton of the workshop
 ** Day 1
-**** Get your hands dirty [1.5h]
+**** Get your hands dirty [1.5h] [9:30-11:00]
 - Emacs, Leiningen, Cider, Paredit
 - Arithmetic
 - Symbols, Keywords, Vars
-- Booleans, control structures
+- Booleans, Strings
+- Control structures
 - Bindings
-**** Introduction [0.5h]
+- Vectors
+- Functions
+   - Recursion
+   - Higher-order functions (introduction)
+***** Excercise [0.5h] [11:00-11:30]
+**** Break [0.5h] [11:30-12:00]
+**** Introduction [0.5h] [12:00-12:30]
 - The Lisp philosophy (quotes)
-- The Clojure philosophy (simplicity, jvm, immutability)
+- The Clojure philosophy (fp, simplicity, jvm, immutability)
 - Contrast with other JVM languages (java, scala, groovy, JRuby)
 - Clojure community, libraries and books
 - Where to find help
-**** Break [0.5h]
-**** Clojure's persistent data structures [1h]
-- Sequences (lists and vectors)
+**** Clojure's persistent data structures [2.5h]
+***** Sequences (lists and vectors) [1h] [12:30-1:30]
     - Create and manipulate sequences (map, filter, reduce)
     - Laziness (infinite sequences, utilizing laziness)
     - Immutability with persistent data structures (trie)
-- Sets and Maps
-    - Create and manipulate
-- Functions
-    - Recursion
-    - Higher-order functions
+**** Lunch [1:30-2:30]
+***** Maps and Sets [2:30-3:30]
+***** Excercise [0.5h] [3:30-4:00]
+
+** Day 2
 **** Some practical examples [1h]
 - Working with libraries
 - require/import
 - read/load/compile and how it works
 - Read from the filesystem, parse json, etc
-**** Lunch
-** Day 2
 **** Modeling
-- Create and extend abstractions with Multimethods, Protocols, and Records
 - Proper use of maps, vectors and schema to model the domain
 - Horizontal layering and vertical partitioning of code using namespaces
+- Create and extend abstractions with Multimethods, Protocols, and Records
 - Connect code and configs to build up a final app
 **** Java interop [1.5h]
 - Calling java code (like java.util.concurrent classes or jsoup) from clojure

@@ -1,6 +1,15 @@
-(ns wikiscrape.core)
+(ns wikiscrape.core
+  (:import [org.jsoup Jsoup]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn fetch-html [url]
+  (.get (Jsoup/connect url)))
+
+(defn sanitize-html [url])
+
+(defn write-santized-html-to-file [sanitized-document])
+
+(defn scrape [url]
+  (-> url
+      fetch-html
+      sanitize-html
+      write-santized-html-to-file))

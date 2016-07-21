@@ -1,19 +1,27 @@
 * Skeleton of the workshop
 ** Day 1
 **** Get your hands dirty [1.5h] [9:30-11:00]
-- Emacs, Leiningen, Cider, Paredit
-- Arithmetic
-- Symbols, Keywords, Vars
-- Booleans, Strings
-- Control structures
-- Bindings
-- Vectors
-- Functions
-   - Recursion
-   - Higher-order functions (introduction)
+[srihari]
+
+- Intro [45m]
+ - Emacs, Leiningen, Cider, Paredit
+ - Arithmetic (numerics, rational)
+ - Symbols, Keywords, Vars
+ - Booleans, Strings
+ - metadata, nil punning
+ - Control structures
+ - Bindings
+ - Vectors
+ - Destructuring
+
+[abnv]
+- Functions [45m]
+  - Recursion
+  - Higher-order functions (introduction)
 ***** Excercise [0.5h] [11:00-11:30]
 **** Break [0.5h] [11:30-12:00]
 **** Introduction [0.5h] [12:00-12:30]
+[srihari]
 - The Lisp philosophy (quotes)
 - The Clojure philosophy (fp, simplicity, jvm, immutability)
 - Contrast with other JVM languages (java, scala, groovy, JRuby)
@@ -21,10 +29,12 @@
 - Where to find help
 **** Clojure's persistent data structures [2.5h]
 ***** Sequences (lists and vectors) [1h] [12:30-1:30]
+[govind]
     - Create and manipulate sequences (map, filter, reduce)
     - Laziness (infinite sequences, utilizing laziness)
     - Immutability with persistent data structures (trie)
 **** Lunch [1:30-2:30]
+[unni]
 ***** Maps and Sets [2:30-3:30]
 ***** Excercise [0.5h] [3:30-4:00]
 
@@ -41,6 +51,7 @@
 - Connect code and configs to build up a final app
 **** Java interop [1.5h]
 - Calling java code (like java.util.concurrent classes or jsoup) from clojure
+- Type hinting
 - Extending java code in clojure
 **** Break [0.5h]
 **** Concurrency and parallelism [2h]
@@ -52,4 +63,6 @@
 - A couple of very simple macros to give a feel for manipulating code as data
 **** Spec [0.25h]
 - A couple of very simple examples to demonstrate clojure.spec
+**** Popular libraries [0.05]
+- ring, schema, honeysql, compojure, etc
 **** Lunch

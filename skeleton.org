@@ -1,45 +1,63 @@
 * Skeleton of the workshop
+
+** Summary
+| Section                       | Duration (h) |      Timing |
+|-------------------------------+--------------+-------------|
+| Get your hands dirty          |            2 | 09:30-11:30 |
+| Tea Break                     |          0.5 | 11:30-12:00 |
+| Intro                         |          0.5 | 12:00-12:30 |
+| Persistent data structures    |            1 | 12:30-01:30 |
+| Lunch                         |            1 | 01:30-02:30 |
+| Collections continued         |          1.5 | 02:30-04:00 |
+|-------------------------------+--------------+-------------|
+| (Day 2) Solve a problem       |          5.5 |  9:30-04:00 |
+| - Modelling                   |              |             |
+| - Java Interop                |              |             |
+| - Concurrency and Parallelism |              |             |
+| - Macros                      |              |             |
+|-------------------------------+--------------+-------------|
+
 ** Day 1
-**** Get your hands dirty [1.5h] [9:30-11:00]
-[srihari]
+**** Get your hands dirty [2h] [9:30-11:30]
+1. Intro [45m] [9:30-10:15] [srihari]
+   - Emacs, Leiningen, Cider, Paredit
+   - Arithmetic (numerics, rational)
+   - Symbols, Keywords, Vars
+   - Booleans, Strings
+   - metadata, nil punning
+   - Control structures
+   - Bindings
+   - Vectors
+   - Destructuring
 
-- Intro [45m]
- - Emacs, Leiningen, Cider, Paredit
- - Arithmetic (numerics, rational)
- - Symbols, Keywords, Vars
- - Booleans, Strings
- - metadata, nil punning
- - Control structures
- - Bindings
- - Vectors
- - Destructuring
+2. Functions [45m] [10:15-11:00] [abnv]
+   - Recursion
+   - Higher-order functions (introduction)
 
-[abnv]
-- Functions [45m]
-  - Recursion
-  - Higher-order functions (introduction)
-***** Excercise [0.5h] [11:00-11:30]
-**** Break [0.5h] [11:30-12:00]
-**** Introduction [0.5h] [12:00-12:30]
-[srihari]
-- The Lisp philosophy (quotes)
+3. Excercise [0.5h] [11:00-11:30]
+
+**** Tea Break [0.5h] [11:30-12:00]
+**** Intro [0.5h] [12:00-12:30] [srihari]
+- The Lisp philosophy
 - The Clojure philosophy (fp, simplicity, jvm, immutability)
-- Contrast with other JVM languages (java, scala, groovy, JRuby)
+- Contrast with other JVM languages (Java, JRuby)
 - Clojure community, libraries and books
 - Where to find help
-**** Clojure's persistent data structures [2.5h]
-***** Sequences (lists and vectors) [1h] [12:30-1:30]
-[govind]
+**** Clojure's persistent data structures [1h]
+1. Sequences (lists and vectors) [1h] [12:30-1:30] [govind]
     - Create and manipulate sequences (map, filter, reduce)
     - Laziness (infinite sequences, utilizing laziness)
     - Immutability with persistent data structures (trie)
 **** Lunch [1:30-2:30]
 [unni]
-***** Maps and Sets [2:30-3:30]
-***** Excercise [0.5h] [3:30-4:00]
+**** Clojure's persistent data structures continued [1.5h]
+2. Maps and Sets [1h] [2:30-3:30] [unni]
+    - Create and manipulate maps and sets
+    - How to use maps and sets idiomatically
+3. Excercise [0.5h] [3:30-4:00]
 
 ** Day 2
-**** Some practical examples [1h]
+**** Some practical examples
 - Working with libraries
 - require/import
 - read/load/compile and how it works
@@ -49,20 +67,20 @@
 - Horizontal layering and vertical partitioning of code using namespaces
 - Create and extend abstractions with Multimethods, Protocols, and Records
 - Connect code and configs to build up a final app
-**** Java interop [1.5h]
+**** Java interop
 - Calling java code (like java.util.concurrent classes or jsoup) from clojure
 - Type hinting
 - Extending java code in clojure
-**** Break [0.5h]
-**** Concurrency and parallelism [2h]
+**** Concurrency and parallelism
 - pmap
 - futures, promises
 - java.util.concurrent utilities
 - Concurrency primitives in clojure (atom, agent, var, ref)
-**** Macros [0.25h]
+**** Macros
 - A couple of very simple macros to give a feel for manipulating code as data
-**** Spec [0.25h]
+**** Spec
 - A couple of very simple examples to demonstrate clojure.spec
-**** Popular libraries [0.05]
-- ring, schema, honeysql, compojure, etc
-**** Lunch
+**** Getting things done
+- When to use clojure, when not to.
+- Popular libraries
+  - ring, schema, honeysql, compojure, etc

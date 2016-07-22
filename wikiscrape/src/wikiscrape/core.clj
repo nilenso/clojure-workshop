@@ -1,17 +1,58 @@
 (ns wikiscrape.core
-  (require [clojure.java.io :as io])
-  (:import [org.jsoup Jsoup]))
+  (require [clojure.java.io :as io]
+           [clojure.string :as s])
+  (:import [org.jsoup Jsoup]
+           [org.jsoup.nodes Document Element]))
+
+(def url-prefix
+  "https://en.wikipedia.org")
+
+(defn text [^Element e]
+  (.text e))
+
+(defn title [^Document doc]
+  #_(.. doc (select "#firstHeading") text)
+  (.text (.select doc "#firstHeading")))
+
+(defn table-of-contents [^Document doc]
+  (.select doc "toc"))
+
+(defn description [^Document doc]
+  (->> (.select doc "#mw-content-text")
+       first
+       (.children)
+       (take-while #(not= "toc" (.id %)))
+       (filter #(= "p" (.tagName %)))
+       (map text)
+       (s/join "\n")))
+
+(defn links-to-follow [^Document doc n]
+  (->> (.select doc "#mw-content-text a")
+       (map #(.attr % "href"))
+       (filter #(.startsWith % "/wiki"))
+       (distinct)
+       (take n)
+       vec))
 
 (defn fetch-html [url]
-  (.get (Jsoup/connect url)))
+  (.get (Jsoup/connect (str url-prefix url))))
 
-(defn sanitize-html [url])
+(defn info [^Document doc n]
+  {:title (title doc)
+   :table-of-contents (table-of-contents doc)
+   :description (description doc)
+   :links-to-follow (links-to-follow doc n)})
 
-(defn write-santized-html-to-file [{:keys [title] :as sanitized-document}]
-  (spit (str title ".edn") (pr-str sanitized-document)))
+(defn write-page [{:keys [title] :as page}]
+  (let [filename (s/replace title #"\s|/" "_")]
+    (spit (str "scraped/" filename ".edn") (pr-str page))))
 
-(defn scrape [url]
-  (-> url
-      fetch-html
-      sanitize-html
-      write-santized-html-to-file))
+(defn scrape [start-url n]
+  (let [page (info (fetch-html start-url) n)]
+    (write-page page)
+    (when (pos? n)
+        (doseq [url (:links-to-follow page)]
+          (scrape url (dec n))))))
+
+(comment
+  (scrape "/wiki/Clojure" 1))

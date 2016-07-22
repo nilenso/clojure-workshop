@@ -1,4 +1,4 @@
-(ns sets-and-maps)
+(ns content.collections.sets-and-maps)
 
 ;; SETS
 ;; unordered collections

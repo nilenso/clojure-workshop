@@ -1,0 +1,51 @@
+** Config
+- [-] 30 people
+- [-] 2 days
+- [-] Help: Saturday - [-] Nagaraju, Sunday - [-] Mintu
+
+** Basics
+- [-] Standee outside
+- [-] Chairs
+- [X] Tables
+- [X] Power
+- [-] Projector
+
+** Sanity
+- [-] Mosquito repellents
+- [-] Books/Pens
+- [-] Fans
+- [-] Room freshner
+- [-] Whileboards and pens
+- [-] Bins (segregated)
+- [-] Sound Proofing
+- [-] Tissues
+
+** Food
+- [-] Bokashi upstairs
+- [-] Water filter (fill bottles?)
+- [-] Use mud pot dispenser?
+*** Tea Break
+- [-] Tea/Coffee/Nimbu Pani
+- [-] Chai Point
+- [-] Biscuits
+- [-] Samosa/Mini
+- [-] Yoga Bars
+- [-] Packed Breakfast?
+- [-] Paper napkins
+*** Lunch
+- [-] Imli
+- [-] Pizza
+- [-] Bukkhad
+
+** Restrooms
+- [-] Toilet paper
+- [-] Air freshner
+- [-] Clean bins
+- [-] Cleaned in general
+
+** Giveaways
+- [-] Clojure Cheatsheet
+- [-] Books/Pens?
+- [-] Nilenso cards (to write on)
+- [-] Nilenso stickers
+- [-] Clojure Stickers

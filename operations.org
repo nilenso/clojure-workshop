@@ -13,12 +13,12 @@
 ** Sanity
 - [-] Mosquito repellents
 - [-] Books/Pens
-- [-] Fans
+- [X] Fans
 - [-] Room freshner
-- [-] Whileboards and pens
+- [X] Whileboards and pens
 - [-] Bins (segregated)
 - [-] Sound Proofing
-- [-] Tissues
+- [X] Tissues
 
 ** Food
 - [-] Bokashi upstairs

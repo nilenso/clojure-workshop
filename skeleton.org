@@ -31,8 +31,19 @@
    - Destructuring
 
 2. Functions [45m] [10:15-11:00] [abnv]
-   - Recursion
-   - Higher-order functions (introduction)
+   - syntax, defining and calling functions
+   - multiple argument
+   - docstring
+   - mutli-arity
+   - varargs
+   - destructuring args
+   - contracts
+   - recursion
+   - higher order function: map, filter, reduce
+   - anonymous functions
+   - partial application
+   - composing functions - comp, juxt
+   - closures
 
 3. Excercise [0.5h] [11:00-11:30]
 

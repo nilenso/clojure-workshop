@@ -6,7 +6,6 @@
 (def lst [42 1024 42])
 (def amap {:a :b :c :d})
 
-
 ;; (if test then else)
 (if (= 42 x)
   :boo-yeah

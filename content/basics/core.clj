@@ -1,5 +1,8 @@
 (ns content.basics.core)
 
+;; Join Gitter
+;; Start your REPLs!
+
 ;; REPL
 ;; - Reader => Independent thing. Reads strings, returns data structures
 ;; - Eval => Evaluate. Also an indpedent functionality. Both of these are accessible in regular clojure code.
@@ -49,6 +52,16 @@ a
 ;; 1. immutable
 ;; 2. readable
 ;; 3. equatable/comparable by value. Given immutability, we can guarrantee that comparing by value is sensible. Conversly, if we were comparing mutable objects by value, that would be incorrect. A lot of languages do this by comparing identity, allowing you to define equality, etc. In rich's opinions, that is broken.
+
+;; 1. immutable
+(let [nums [1 2 3 4 5]]
+  {:consd (cons 0 nums)
+   :nums nums})
+
+;; 2. readable
+(read-string "[1 2 3 4 5]")
+(read-string "(inc 1)")
+(read-string "{:hello :there}")
 
 ;; Collections
 ;; Are manipulated via interfaces.

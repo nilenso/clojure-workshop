@@ -26,6 +26,8 @@
 (* 1 2)
 (* 1 2 3 4 5)
 
+;; introduce paredit at this point
+
 ;; Computation: + - * / inc dec quot rem min max
 ;; Comparison: == < ⇐ > >= zero? pos? neg?
 ;; Bitwise operations: bit-and bit-or bit-xor bit-not bit-shift-right bit-shift-left
@@ -33,3 +35,12 @@
 ;; Coercions: int bigdec bigint double float long num short
 
 ;; java.lang.Math is fully available, and doesn't need to build into clojure
+Math/PI
+(Math/sin 90)
+(Math/pow 3 4)
+(Math/sqrt 16)
+
+[127 0x7F 0177 32r3V 2r01111111]
+10.7e-3
+991778647261948849222819828311491035886734385827028118707676848307166514
+;; Excerpt From: Michael Fogus. “The Joy of Clojure, Second Edition, MEAP V08.” iBooks.

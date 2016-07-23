@@ -1,7 +1,7 @@
 (ns content.collections.sets-and-maps)
 
 ;; SETS
-;; unordered collections
+;; unordered collections - mathematical sets
 ;; literal
 #{}
 
@@ -13,11 +13,26 @@
 ;; or use into
 (into #{} [1 2 3 4])
 
+;; check this out
+(into #{[]} [()])
+
+;; still the same ?
+(into #{[1 2]} '[(1 2)])
+
+(type [1 2])
+(type '[(1 2)])
+(= [1 2] '(1 2))
+
+(into #{[] #{} {}} [()])
+
 ;; use hash-set
-(hash-set [1 2 3])
+(hash-set 1 2 3)
 
 ;; sorted-set
-(sorted-set [1 4 3])
+(sorted-set 1 4 3)
+
+;; sort only comparable args passed
+(sorted-set 1 :a)
 
 ;; to get them sorted
 (sort #{:a :b :c})
@@ -42,6 +57,20 @@
 
 ;; sets can be used as functions/predicate for collections
 (every? #{0 1} [0 1 0 1 1 1 0 0 1 1 0])
+
+
+;; use some set operations
+(require 'clojure.set)
+
+;; union
+(clojure.set/union #{:a :b} #{:b :c})
+
+;; intersection
+(clojure.set/intersection #{:a :b} #{:b :c})
+
+;; difference
+(clojure.set/difference #{:a :b} #{:b :c})
+
 
 
 ;; MAPS
@@ -224,6 +253,11 @@
 
 ;; sorted-map
 (sorted-map :a "A" :b "B")
+
+;; sorted-map vs hash-map
+;; soreted-map handles numeric keys differenlty
+(assoc {1 :int} 1.0 :float)
+(assoc (sorted-map 1 :int) 1.0 :float)
 
 ;; when using literal to create maps
 ;; for a small sizes clojure creates array-map

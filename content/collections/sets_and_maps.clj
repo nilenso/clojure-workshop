@@ -41,7 +41,7 @@
 #{:a :a :a}
 
 ;; add elements
-(conj #{:a :a :a} :b)
+(conj #{:a} :b)
 
 ;; remove elements
 (disj #{:a :b :c} :a)
@@ -57,6 +57,8 @@
 
 ;; sets can be used as functions/predicate for collections
 (every? #{0 1} [0 1 0 1 1 1 0 0 1 1 0])
+
+(every? #{0 1} [0 1 0 1 1 1 0 0 1 1 0 2])
 
 
 ;; use some set operations
@@ -226,6 +228,18 @@
 (let [{:keys [name age]
        {:keys [username address]} :profile} person]
   (println username address))
+
+(let [{:strs [a d]} {"a" "A", "b" "B", "c" "C", "d" "D"}]
+  (println a d))
+
+(let [{:syms [a d]} {'a "A", 'b "B", 'c "C", 'd "D"}]
+  (println a d))
+
+(defn foo [a b & {:keys [x y]}]
+  (println a b x y))
+(foo "A" "B")  ;; => A B nil nil
+(foo "A" "B" :x "X")  ;; => A B X nil
+(foo "A" "B" :x "X" :y "Y")  ;; => A B X Y
 
 ;; destructuring in fn arguments
 (defn connect-db [{:keys [host port db-name username password]
